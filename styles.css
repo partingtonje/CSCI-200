@@ -1,0 +1,22 @@
+.nav a {
+    color: #5a5a5a;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 14px 10px;
+    text-transform: uppercase;
+}
+
+.nav li {
+    display: inline;
+}
+
+.jumbotron {
+    background-image: url("banner.jpg");
+    background-position: top left, top right;
+    background-size: contain;
+}
+
+.jumbotron .container {
+    position: relative;
+    top:100px;
+}

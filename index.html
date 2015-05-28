@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!--Highlight.JS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <title>Jake's Masterful HTML Tutorial</title>
+</head>
+<body>
+</div>
+<div class="nav">
+    <div class="container">
+        <ul class="pull-left">
+            <li><a href="sources.html">Sources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="jumbotron"></div>
+
+<div class="container">
+    <h1>What is HTML?</h1>
+
+    <p>HTML, or Hyper Text Markup Language, has been around for some time now and is the backbone for all web pages.
+        <br>
+        Chances are that if you have visited a web page you have most likely encountered HTML. The most up to date
+        version <br>
+        of HTML is HTML5, which was released in October of 2014. HTML 5 adds audio, video and canvas elements allowing
+        <br>
+        for multimedia integration.</p>
+</div>
+<div class="container">
+    <h1>Building a web page.</h1>
+    <br><br>
+
+    <h4>The basic layout of an HTML file</h4>
+
+    <p>HTML uses an easy layout format to organize the content of the web page. <br>
+        The basic components of an HTML file include
+    <ul>
+        <li>The Doctype (<code>&lt;!DOCTYPE html&gt;</code>) is an instruction to the web
+            browser about what version of the markup language the page is written in.
+        </li>
+        <li>The html tags (<code>&lt;html&gt;</code>) tell the web browser where your html 'code' begins
+            and where it ends.
+        </li>
+        <li>The Header (<code>&lt;head&gt;</code>) is the behind the scenes manager for your HTML web page. <br>
+            The header is where all your external library calls go as well as any setup you might do to the website.
+        </li>
+        <li>The Body (<code>&lt;body&gt;</code>) is where the main contents of your web page goes. This is where the
+            user will spend <br>
+            most of their time looking at, so don't be afraid to make it look nice!
+        </li>
+    </ul>
+    </p>
+
+    <h4>Getting started</h4>
+
+    <p>Before we begin you should decide on an enviornment to write your website with. In this tutorial I will be
+        using<br>
+        <a href="http://www.sublimetext.com">Sublime Text</a> this is a lightweight text editor that highlights code
+        very nicely. <br>
+        This editor is not required though so feel free to choose whatever enviornment you like.
+    </p>
+
+    <h4>Your first website</h4>
+
+    <p>
+        Now that you have your enviornment set up lets begin by setting up the basis for a web page. <br>
+        The following code will set up what the Document Object Model, or DOM, will see as your very own web page. <br>
+        Begin by typing
+        this into a new text file:<br>
+    </p>
+
+    <code><pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+    </code>
+
+    <p>The above code is what we call an HTML shell. this is the basic layout for every web page. <br>
+        go ahead and save your text file as <b>index.html</b> and open your website in a browser. <br>
+        Pretty plain, right? Dont worry, we will be adding content at a later time. But for now congratulations on your
+        first website!</p>
+
+
+    <h4>Adding content to your web page:</h4>
+
+    <p>Now that you have your website up and running its time to start adding content to your web page. <br>
+        All of your editing will be done within the <code>&lt;body&gt;</code> tags for now. The <code>
+            &lt;body&gt;</code> tag is <br>
+        the front end that the user will see when visiting your web page. It is important to keep your code <br>
+        orginized within this block as it can get pretty messy at times. Now, it's time to get some text onto the
+        screen! <br>
+        There are two basic components of html text, The title denoted by <code>&lt;h1&gt;</code> will display a big
+        text <br>
+        this is used to divide your website into different sections. Begin by adding <code>
+            &lt;h1&gt;Foo&lt;/h1&gt;</code> <br>
+        into your body section of <b>index.html</b> this will add a title with the text foo to your web page. <br>
+        This is great and all, but what about writing actual text that is not huge, this is done using the <code>&lt;p&gt;</code>
+        tag. <br>
+        This tag is also known as the paragraph tag allows the user to write several lines of text. This is useful for
+        <br>
+        getting information across to the user. As a matter of fact, the sentence you are currently reading is written
+        within the <br>
+        paragraph tag! Now lets add a paragraph to your website. Add the following line after your title <code>&lt;p&gt;Bar&lt;/p&gt;</code>
+        <br>
+        Now, your website is starting to come togther! Feel free to add your own titles and paragraph. <br><br>
+        Your HTML code should look like the following </p>
+    <code><pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+        &lt;h1&gt;Foo&lt;/h1&gt;
+        &lt;p&gt;Bar&lt;/p&gt;
+    
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+    </code>
+
+    <h4>Adding images to your web page:</h4>
+
+    <p>Todays web pages are filled with images to try and catch visitors attention. Without images, among other things,
+        <br>
+        todays web would look very boring. Luckily, it is easy to add images to your page! To add an image you would use
+        the <br>
+        <code>&lt;img&gt;</code> tag. Try adding an image by adding the following line of code to your body: <br>
+        <code>&lt;img src="http://bit.ly/1i8VVBA"/&gt;</code> Notice how this image code has a src field. This tells
+        your DOM <br>
+        where to look for the actual image. The src field can be a local path or a path to an image on the web. Now you
+        can<br>
+        make your web page look pretty gnarly!<br><br>
+        Your HTML code should look like this:
+    </p>
+    <code><pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;img src="http://bit.ly/1i8VVBA/&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+    </code>
+
+    <h4>Adding links to your webpage:</h4>
+
+    <p>As you can see, I have already added a link earlier in this tutorial, but who did I do that? Just like adding
+        <br>
+        images, adding a link is very easy, if not easier! To add a link, you would use the <code>&lt;a&gt;</code> tag.
+        <br>
+        This stands for an anchor tag and is the backbone for links on the web. Lets try try adding a link to your page!
+        <br>
+        Add the followig line of code: <code>&lt;a href="http://bit.ly/1LKaTfp"&gt;Link&lt;/a&gt;</code> Notice how we
+        <br>
+        are using href instead of src. href is similar to src, however it tells the web page to execute the link rather
+        <br>
+        than just pull information from it. Also, you can use href as a domain name or a local path. Now you can set up
+        links <br>
+        like a pro! <br><br>
+        Your link code should look like this:
+    </p>
+
+    <code><pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;a href="http://bit.ly/1LKaTfp"&gt;Link&lt;/a&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+    </code>
+
+    <h4>Adding multimedia to your webpage:</h4>
+
+    <p>Along with adding images to your web page, you may find it productive to add other multimedia content<br>
+        such as audio and video. To add an audio file to your page you would use the <code>&lt;audio&gt;</code> tag.
+        <br>
+        It is worth noting that audio is not supported in all browsers. <br>
+        To add video to your web page, you would use the <code>&lt;video&gt;</code> tag. It is also worth mentioning
+        that <br>
+        video is not supported in all browsers. <br><br>
+        The following code implements both audio and video into the website using bar.mp3 and foo_bar.mp4
+    </P>
+    <code><pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+       &lt;!-- Audio --&gt;
+       &lt;audio controls&gt;
+            &lt;source src="bar.ogg" type="audio/ogg"&gt;
+            &lt;source src="bar.mp3" type="audio/mpeg"&gt;
+            Your browser does not support the audio element.
+        &lt;/audio&gt;
+
+        &lt;!-- Video --&gt;
+        &lt;video width="400" controls&gt;
+            &lt;source src="foo_bar.mp4" type="video/mp4"&gt;
+            &lt;source src="foo_bar.ogg" type="video/ogg"&gt;
+            Your browser does not support HTML5 video.
+        &lt;/video&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+    </code>
+</body>
+</html>
